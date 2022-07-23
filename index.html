@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title> Reynoso for AFGE 1680 President </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- Notification Banner JS -->
+  <script src="src/jquery.notificationbanner.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation Section -->
+
+  <!-- Desktop -->
+  <div class="navigationbar">
+    <div class="nav-btns" id="navbar">
+      <a id="nav_1" href="#top"><img src="./logo 2.png" class="img_logo" alt="Reynsoso for President"></a>
+      <a id="nav_2" href="#aboutme">About Me</a>
+      <a id="nav_3" href="#issues">Issues</a>
+      <a id="nav_4" href="#ANC">What is AFGE 1680?</a>
+      <a id="nav_5" href="#intouch">Get Involved</a>
+      <!-- <a id="nav_6" target="_blank" href="/emails">Newsletter</a> -->
+    </div>
+  </div>
+
+  <!-- Mobile devices/ smaller screens -->
+  <div class="dropdown">
+    <button onClick="show_dropdown()" id="button" class="dropbtn"><img src="./nav.png" alt="Menu"></button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#top" onClick="hide_dropdown()">Home</a>
+      <a href="#aboutme" onClick="hide_dropdown()">About Me</a>
+      <a href="#issues" onClick="hide_dropdown()">Issues</a>
+      <a href="#ANC" onClick="hide_dropdown()">What is AFGE 1680?</a>
+      <a href="#intouch" onClick="hide_dropdown()">Get Involved</a>
+      <a href="#donate" onClick="hide_dropdown()">Donate</a>
+      <!-- <a target="_blank" href="/emails">Newsletter</a> -->
+    </div>
+  </div>
+
+
+  <!-- Page width is set here Here -->
+  <div class="pagewidth">
+
+    <!-- Intro Section (Hi, I'm Patrick) -->
+    <div class="intro-header"><a class="anchor" id="top"></a>
+      <div id="hello">Hi, I'm Reynoso.</div>
+      <div id="personal_statement">I'm running for President of AFGE 1680 at Terminal Island.
+      </div>
+
+      <div id="mobile_img-abtme"><img src="./candidate.jpg" alt="Photograph of AFGE 1680 Candidate Alex Reynoso"></div>
+
+      <!-- if we decide not to use mailchimp, this embeded form should still work with github pages -->
+
+      <!-- <form action="https://formspree.io/f/{form_id}" method="post">
+  <label for="email">Your Email</label>
+  <input name="Email" id="email" type="email">
+  <button type="submit">Submit</button>
+</form> -->
+
+      <div id="why_im_running">Our facility is in the midst of rapid change. During this time of uncertainty in our
+        communinity, and nation
+        politics, we as a community need to play a vital role in ensuring that our voices and values are heard and
+        represented. I want to be an advocate for you and our neighbors.</div>
+
+      <!--            <a href="#issues" class="learnmore" id="this">Learn More</a> -->
+    </div>
+
+    <!-- About Me Section -->
+    <div class="grayband_section">
+      <div class="aboutme"><a class="anchor" id="aboutme"></a>
+
+        <div id="whyimrunning">Here's Why I'm Running</div>
+
+        <div id="img-abtme"><img src="./candidate.jpg" alt="Photograph of ANC Candidate Patrick K. Parlej"></div>
+
+        <div id="whyme_paragraph">My parents came to the United States thirty years ago in search of a better life. They
+          came to this country with humble beginnings, like many immigrants. As a result of their economic struggle, I
+          learned how important it is to work hard, but I also gained a better understanding of how important it is to
+          have strong institutions and a functional government. Despite the fact that I realize we have a long way to go
+          in achieving justice and equality for all, our country's values motivate me.
+          <br><br>
+          Local politics may seem less important than national politics at first glance. However, these local topics
+          affect our daily lives and play an important role in shaping our communities. Real political change is built
+          from the ground up, as history has repeatedly demonstrated. That's why I'm running for the AFGE President.
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Issues Section -->
+
+    <div class="issues"><a class="anchor" id="issues"></a>
+      <div id="core_issues">Core Issues</div>
+
+      <div id="env-box">
+        <h4>Environment</h4><br>New construction projects are springing up all around our neighborhood and we need to
+        ensure that new development is sustainable for generations to come. Additionally, we must devote adequate
+        resources to incorporating green practices within existing infrastructure. Washington, DC has the potential to
+        be one of the most environmentally conscious places in the world. We have the chance to contribute to that
+        effort within our neighborhood.
+      </div>
+
+      <div id="afh-box">
+        <h4>Affordable Housing</h4><br>DC is one of the most expensive places to live in the country and costs are
+        continuing to rise. Without affordable housing, many existing residents are pushed out and high costs prevent
+        new residents from moving in. As new businesses continue to expand into our area, housing costs continue to
+        increase for residents in our neighborhood and communities across the city. We must to address how these issues
+        affect an already inadequate affordable housing situation.
+      </div>
+
+      <div id="st-box">
+        <h4>Statehood</h4><br>Statehood means funding, resources, and, most of all, representation. This is an issue
+        that we need to continue to raise at every level of government. DC Statehood not only translates to meaningful
+        federal representation for DC residents, but also unlocks significant access to resources we could use to create
+        positive change for neighborhoods across our city. For example, without statehood, DC has been limited in its
+        ability to respond to the COVID-19 pandemic – underscoring the need for action.
+      </div>
+
+    </div>
+
+    <!-- What is the ANC Section -->
+
+    <div class="grayband_section">
+
+      <div class="ANC"><a class="anchor" id="ANC"></a>
+
+        <div id="whatisANC">What is AFGE 1680?</div>
+
+        <div id="img-anc">
+          <img src="./ANC6E_05.png" alt="Photograph of ANC-6E05 Map">
+        </div>
+
+        <div id="anc_textbox">
+          The American Federation of Government Employees (AFGE) is an American labor union representing over 670,000
+          employees of the federal government, about 5,000 employees of the District of Columbia, and a few hundred
+          private sector employees, mostly in and around federal facilities. AFGE is the largest union for civilian,
+          non-postal federal employees and the largest union for District of Columbia employees who report directly to
+          the mayor (i.e., outside D.C. public schools).<br><br>
+
+          If you work in the Terminal Island area, like I do, you are most likely part of AFGE 1680 region. AFGE 1680
+          has elections means to represent the constituents in the region. If you work at Termianl Island, I am running
+          to represent you.<br><br>
+        </div>
+      </div>
+    </div>
+
+    <!-- Get in Touch Section -->
+
+    <div class="intouch"><a class="anchor" id="intouch"></a>
+      <div id="getintouch">Get in Touch</div>
+
+      <div id="outreach_statement">
+        My goal is to build a strong relationship between workers at Terminal Island and AFGE to ensure that our
+        members'
+        voices are heard and represented. To make meaningful progress on important local issues, we
+        need a culture in which any resident feels empowered to get involved in community action and local government to
+        express their thoughts and opinions.<br><br>
+
+        I am eager to serve my community and want to hear from you on how best I can be of service. Please contact
+        me via email or Twitter and let's work together to make a positive change in our neighborhood.
+
+      </div>
+
+      <div id="outreach_symbols">
+        <a id=contact_links href="mailto:reynososafgecampaign@gmail.com">Click Here<br>To Send Me an Email<img
+            id="envelope" src="./envelope.png" alt="Envelope">or send a messsage
+          to<br>reynososafgecampaign@gmail.com</a><br><br>
+        Connect on Twitter
+        <a href="https://twitter.com/AreyforPrez" target="_blank"><img id="bird" src="./twitter.png"
+            alt="Twitter logo"></a>
+        Watch me on Youtube
+        <a href="https://www.youtube.com/channel/UCljLfPwDb_Exek4GvkTFyqQ" target="_blank"><img id="play"
+            src="./youtube.png" alt="Youtube Channel"></a>
+      </div>
+    </div>
+
+    <!-- Donate -->
+
+    <div class="grayband_section">
+      <div class="donate"><a class="anchor" id="donate"></a>
+
+        <div id="excited">Excited About This Campaign?</div>
+
+        <div id="fundingstatement">
+          This campaign is a grassroots effort. If you believe in community engagement and the core issues outlined
+          here, please consider making a contribution by contacting our <a
+            href="mailto:reynososafgecampaign@gmail.com">finance director.</a> Even more importantly, I also invite you
+          to
+          join me in getting involved in our local government. Let's make a difference in our community, together.</div>
+
+
+        <div id="logobox">
+          <a href="//secure.actblue.com/donate/patrickforanc#" target="_blank">
+            <img src="./logo 2.png" class="footer-img-box" alt="Reynoso for AFGE 1680 President">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Closes page background -->
+  </div>
+
+  <!-- Footer  -->
+
+  <div class="footer">
+    <div class="madebyAE">
+      All Rights Reserved®
+    </div>
+
+  </div>
+  </div>
+
+</body>
+<script src="./pkp.js"></script>
+
+</html>

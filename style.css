@@ -1,0 +1,1173 @@
+/* This page is organized along two mental schemas. */
+/* Material that impacts the whole page comes before material that impacts individual sections only */
+/* But sections appear the order they appear on the page moving from top to bottom */
+
+
+/*Scroll behavior coherently brings the page up or down to the correct spot*/
+/*The HTML background color maintains a consistent color ever if someone on a mac scrolls up or down the page too far*/
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #Fff;
+  /*F8F8F8*/
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0%;
+  /* This gets rid of a small line that appears on the left hand side of the screen, like everything has slight padding */
+  justify-content: center;
+  margin: auto;
+  width: 1500px;
+}
+
+/* Transparent Navigation ID Holder to make sure header doesn't block text when using navigation buttons */
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -170px;
+  visibility: hidden;
+}
+
+#notify {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  width: 1500px;
+  height: auto;
+  color: black;
+  background-color: #ff6e6e;
+  font-family: "Montserrat";
+  font-size: 150%;
+  text-align: left;
+  padding-top: 3%;
+  line-height: 1.5;
+  /*  padding-left: 5%;*/
+}
+
+#newsletter_text {
+  padding-left: 5%;
+}
+
+
+/* NAVIGATION BAR */
+
+/* On desktop, navigation bar remains fixed at the top of the screen */
+/* Click the logo will bring the user back to the top of the page */
+/* Clicking other navigation buttons will bring the user to the section indicated*/
+
+.navigationbar {
+  /* container where site navigation buttons sit */
+  text-align: center;
+  color: red;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  /* F8F8F8 */
+  overflow: hidden;
+  margin: auto;
+  width: 1500px;
+}
+
+.nav-btns button {
+  color: black;
+  cursor: pointer;
+  float: center;
+  font-family: "Fjord One";
+}
+
+/* Add underline on hover */
+.nav-btns button:hover {
+  text-decoration: underline;
+}
+
+#nav_1 {
+  color: black;
+  cursor: pointer;
+  /* Pointer/hand icon */
+  margin-left: 2.5%;
+  margin-bottom: .5%;
+  padding: .25%;
+  margin-top: .25%;
+  float: left;
+  width: 14%;
+  padding-bottom: .05%;
+}
+
+.img_logo {
+  width: 100%;
+  height: auto;
+}
+
+#nav_2 {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  /* Pointer/hand icon */
+  font-family: "Montserrat";
+  font-size: 120%;
+  float: left;
+  margin-left: 4%;
+  margin-top: 3%;
+  padding: .25%;
+  padding-bottom: .05%;
+}
+
+#nav_3 {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  /* Pointer/hand icon */
+  font-family: "Montserrat";
+  font-size: 120%;
+  float: left;
+  margin-left: 8%;
+  margin-top: 3%;
+  padding: .25%;
+  padding-bottom: .05%;
+}
+
+#nav_4 {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  /* Pointer/hand icon */
+  font-family: "Montserrat";
+  font-size: 120%;
+  float: left;
+  margin-left: 8%;
+  margin-top: 3%;
+  padding: .25%;
+  padding-bottom: .05%;
+}
+
+#nav_5 {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  /* Pointer/hand icon */
+  font-family: "Montserrat";
+  font-size: 120%;
+  float: left;
+  margin-left: 8%;
+  margin-top: 3%;
+  padding: .25%;
+  padding-bottom: .05%;
+}
+
+#nav_6 {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  /* Pointer/hand icon */
+  font-family: "Montserrat";
+  font-size: 120%;
+  float: left;
+  margin-left: 8%;
+  margin-top: 3%;
+  padding: .25%;
+  padding-bottom: .05%;
+}
+
+
+a#nav_1:hover,
+a#nav_1:active {
+  text-decoration: underline;
+}
+
+a#nav_2:hover,
+a#nav_2:active {
+  text-decoration: underline;
+}
+
+a#nav_3:hover,
+a#nav_2:active {
+  text-decoration: underline;
+}
+
+a#nav_4:hover,
+a#nav_4:active {
+  text-decoration: underline;
+}
+
+a#nav_5:hover,
+a#nav_5:active {
+  text-decoration: underline;
+}
+
+a#nav_6:hover,
+a#nav_6:active {
+  text-decoration: underline;
+}
+
+.dropdown {
+  display: none;
+}
+
+
+
+/* This begins << after >> the navigation bar and is closed << before >> the footer */
+.pagewidth {
+  width: 100%;
+  /* Width of content box should remain the same despite zoom level */
+  background-color: #13274d;
+  /*203865*/
+}
+
+/* INTRO SECTION 'HI IM PATRICK' */
+
+.intro-header {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 12%;
+  padding-bottom: 2.5%;
+}
+
+#hello {
+  font-family: "Montserrat";
+  font-size: 400%;
+  color: white;
+}
+
+#personal_statement {
+  font-family: "Montserrat";
+  font-size: 250%;
+  color: white;
+  text-align: left;
+  padding-top: 3%;
+  line-height: 1.5;
+}
+
+#why_im_running {
+  font-family: "Montserrat";
+  font-size: 150%;
+  color: white;
+  text-align: left;
+  padding-top: 3%;
+  line-height: 1.5;
+}
+
+.learnmore {
+  /* learn more button at the bottom of the section*/
+  font-family: "Montserrat";
+  border-style: solid;
+  color: white;
+  padding: 1% 5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 150%;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* CORE ISSUES SECTION */
+
+.grayband_section {
+  background-color: #fff;
+  /* F8F8F8  previous color */
+  /* sets background of section to gray rather than blue*/
+}
+
+#core_issues {
+  /* Holds the section title*/
+  font-family: "Montserrat";
+  font-size: 250%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 4%;
+}
+
+.issues {
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 4%;
+  height: 100%;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 100%;
+  text-align: left;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+/* The following boxes hold the three focus issues*/
+#env-box {
+  float: left;
+  width: 24%;
+  display: inline-block;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 5%;
+}
+
+#afh-box {
+  float: center;
+  width: 24%;
+  display: inline-block;
+  margin-right: 4%;
+  margin-left: 5.5%;
+  margin-bottom: 5%;
+}
+
+#st-box {
+  float: right;
+  width: 24%;
+  display: inline-block;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-bottom: 5%;
+}
+
+h4 {
+  /* Text inside each issue box*/
+  font-family: "Montserrat";
+  font-size: 160%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 0px;
+  margin: auto;
+  margin-top: 5%;
+}
+
+/* ABOUT ME SECTION */
+
+.aboutme {
+  /* Holds the section title*/
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 5%;
+  padding-top: 4%;
+  height: 100%;
+}
+
+#whyimrunning {
+  font-family: "Montserrat";
+  font-size: 250%;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  margin: auto;
+  padding-top: 0%;
+}
+
+#mobile_img-abtme {
+  display: none;
+}
+
+#img-abtme {
+  /* Holds the image */
+  float: left;
+  width: 24%;
+  display: inline-block;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  margin-top: 3%;
+}
+
+#whyme_paragraph {
+  font-family: "Montserrat";
+  font-size: 130%;
+  float: center;
+  width: 70%;
+  text-align: left;
+  display: inline-block;
+  margin-top: 3%;
+}
+
+
+/* What is the ANC Section */
+
+.ANC {
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  padding-left: 0%;
+  padding-top: 4%;
+  height: 100%;
+}
+
+#whatisANC {
+  font-family: "Montserrat";
+  font-size: 250%;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  margin: auto;
+}
+
+#img-anc {
+  float: left;
+  width: 40%;
+  display: inline-block;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+#anc_textbox {
+  font-family: "Montserrat";
+  font-size: 130%;
+  float: center;
+  width: 55%;
+  display: inline-block;
+  margin-top: 3%;
+  margin-left: 5%;
+  text-align: left;
+}
+
+
+/* Get in Touch Seection */
+
+.intouch {
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+#getintouch {
+  font-family: "Montserrat";
+  font-size: 250%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding-top: 1.25%;
+}
+
+#outreach_statement {
+  float: left;
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-family: "Montserrat";
+  font-size: 125%;
+  color: white;
+  padding: 0px;
+}
+
+#outreach_symbols {
+  float: left;
+  width: 40%;
+  margin-top: 2.5%;
+  margin-left: 6%;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 125%;
+  color: white;
+  padding: 0px;
+}
+
+
+a#contact_links {
+  color: white;
+  text-decoration: none;
+}
+
+
+#envelope {
+  width: 15%;
+  height: auto;
+  padding-bottom: 2.5%;
+  padding-top: 2.5%;
+}
+
+#envelope:hover,
+a#envelope:active {
+  width: 20%;
+  height: auto;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+#bird {
+  width: 15%;
+  height: auto;
+  padding-bottom: 2.5%;
+  padding-top: 2.5%;
+}
+
+#bird:hover,
+a#bird:active {
+  width: 20%;
+  height: auto;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+#play {
+  width: 15%;
+  height: auto;
+  padding-bottom: 2.5%;
+  padding-top: 2.5%;
+}
+
+#play:hover,
+a#play:active {
+  width: 20%;
+  height: auto;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+
+
+/* Donate Section */
+
+.donate {
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 4%;
+  padding-top: 1%;
+  height: 100%;
+}
+
+
+#excited {
+  font-family: "Montserrat";
+  font-size: 250%;
+  color: black;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2.5%;
+  padding-top: 2.5%;
+}
+
+#fundingstatement {
+  float: left;
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 0%;
+  margin-top: 5%;
+  font-family: "Montserrat";
+  font-size: 125%;
+  color: black;
+  padding: 0px;
+}
+
+#logobox {
+  float: left;
+  width: 40%;
+  margin-top: 2.5%;
+  margin-left: 10%;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 125%;
+  color: white;
+  padding: 0%;
+}
+
+#click_donate {
+  font-family: "Montserrat";
+  font-size: 100%;
+  color: white;
+  text-align: center;
+  margin: 0%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  background-color: #203865;
+
+  margin-bottom: 2%;
+  margin-right: 42%;
+  margin-left: 42%;
+  text-decoration: none;
+}
+
+#click_donate:hover,
+#click_donate:active,
+{
+font-family: "Montserrat";
+font-size: 100%;
+color: black;
+text-align: center;
+margin: auto;
+padding-bottom: 5%;
+cursor: pointer;
+border-style: solid;
+border-color: #203865;
+}
+
+a#donatehere {
+  color: white;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+a#donatehere:hover,
+a#donatehere:active {
+  color: white;
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+
+
+
+/* Footer */
+.footer {
+  background-color: #203865;
+  width: 100%;
+  padding: 1%;
+  margin: 2.5%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 30%;
+  overflow: none;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.rightsreserved {
+  padding-left: 75%;
+  padding-right: 3%;
+  text-align: right;
+  color: white;
+  margin: auto;
+  font-family: "Montserrat";
+  font-size: 30%;
+}
+
+.madebyAE {
+  padding-left: 3%;
+  background-color: transparent;
+  margin: auto;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 30%;
+}
+
+a#attributionlink {
+  color: white;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1330px) {
+
+  .navigationbar {
+    text-align: center;
+    color: black;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F8F8F8;
+    padding-top: 1%;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+
+
+  #nav_2 {
+    margin-left: 6%;
+  }
+
+  #nav_3 {
+    margin-left: 6%;
+  }
+
+  #nav_4 {
+    margin-left: 6%;
+  }
+
+  #nav_5 {
+    margin-left: 6%;
+  }
+
+  #nav_6 {
+    margin-left: 6%;
+  }
+
+
+  @media only screen and (max-width: 1083px) {
+
+    /*      .navigationbar { 
+      text-align: center;
+      color: black;
+      z-index: 1;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #F8F8F8;
+      padding-top: 1%;
+      justify-content: center;
+      margin: auto;
+      width: 100%; 
+    }*/
+
+    #nav_2 {
+      margin-left: 4%;
+    }
+
+    #nav_3 {
+      margin-left: 4%;
+    }
+
+    #nav_4 {
+      margin-left: 4%;
+    }
+
+    #nav_5 {
+      margin-left: 4%;
+    }
+
+    #nav_6 {
+      margin-left: 4%;
+    }
+
+
+    @media only screen and (max-width: 908px) {
+
+      .navigationbar {
+        text-align: center;
+        color: black;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #F8F8F8;
+        padding-top: 1%;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+      }
+
+
+      html,
+      body {
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+
+      a.anchor {
+        display: block;
+        position: relative;
+        top: -100px;
+        visibility: hidden;
+      }
+
+
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: fixed;
+        display: inline-block;
+        float: right;
+        z-index: 10;
+        align-content: right;
+        top: 2%;
+        right: 2%;
+        /*  margin-left: 60%;*/
+      }
+
+      /* Style The Dropdown Button */
+      .dropbtn {
+        background-color: transparent;
+        width: 40%;
+        border: none;
+        cursor: pointer;
+        float: right;
+        margin-right: 10%;
+        padding-top: 2%;
+        /*  z-index: 1;*/
+      }
+
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #F8F8F8;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        font-family: "Montserrat";
+        font-size: 80%;
+        z-index: 1;
+        margin-top: 20%;
+      }
+
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #b0bbd1;
+      }
+
+      .navigation {
+        /*      container where site navigation buttons sit */
+        text-align: center;
+        color: black;
+        width: 100%;
+        background-color: #F8F8F8;
+        padding-bottom: 2%;
+        height: auto;
+        z-index: 0;
+      }
+
+      /*#drop_menu {
+  width: 30%;
+  border: 2.5px solid transparent;
+  background: transparent;
+  z-index: 1;
+  color: black;
+  position: fixed;
+  margin-top: 4%;
+  margin-left: 75%;
+  font-family: "Montserrat"; 
+  font-size: 110%; 
+}*/
+
+      #nav_1 {
+        width: 35%;
+        height: auto;
+      }
+
+      .learnmore {
+        /* learn more button at the bottom of the section*/
+        font-family: "Montserrat";
+        border-style: solid;
+        padding: 1% 5%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 150%;
+        cursor: pointer;
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+
+      /*Scroll button upper right corder or mobile*/
+      .img_nav {
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        padding: .25%;
+        margin-right: 0%;
+        display: inline-block;
+      }
+
+      #nav_img {
+        margin-top: 2%;
+        margin-right: 3%;
+        width: 10%;
+        z-index: -1;
+        display: inline-block;
+        float: right;
+      }
+
+      /*Hide navigation buttons on mobile becasue of drop down menu*/
+
+      #nav_2 {
+        display: none;
+      }
+
+      #nav_3 {
+        display: none;
+      }
+
+      #nav_4 {
+        display: none;
+      }
+
+      #nav_5 {
+        display: none;
+      }
+
+      #nav_6 {
+        display: none;
+      }
+
+      #dropnav_6 {
+        display: none;
+      }
+
+      /* Intro/ Header: Hi, I'm Patrick */
+
+      .intro-header {
+        /*      margin-left: 10%;
+      margin-right: 10%;*/
+        padding-top: 27%;
+        /*      padding-bottom: 2.5%;*/
+      }
+
+      #hello {
+        font-size: 310%;
+      }
+
+      #personal_statement {
+        font-size: 200%;
+        padding-top: 6%;
+        line-height: 1.2;
+      }
+
+      #why_im_running {
+        font-size: 130%;
+        padding-top: 5%;
+        padding-bottom: 8%;
+        text-align: left;
+        line-height: 1.5;
+      }
+
+      /* Mobile Core Issues */
+
+      .issues {
+        /* Holds the section title*/
+        overflow-x: hidden;
+        max-width: 100%;
+        color: white;
+        font-family: "Montserrat";
+        font-size: 100%;
+        text-align: left;
+        padding-right: 2%;
+        padding-left: 2%;
+        margin-bottom: 10%;
+        /*      margin-top: 10%;*/
+        line-height: 1.5;
+      }
+
+      #core_issues {
+        font-size: 290%;
+        overflow-x: hidden;
+        max-width: 100%;
+        padding-top: 6%;
+      }
+
+      /* The following boxes hold the three focus issues*/
+      #env-box {
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        overflow: none;
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+
+      #afh-box {
+        float: left;
+        width: 100%;
+        margin-right: 0%;
+        margin-left: 0%;
+        overflow: none;
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+
+      #st-box {
+        float: left;
+        width: 100%;
+        margin-right: 0%;
+        margin-left: 0%;
+        overflow: none;
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+
+
+
+      /* About Me Section */
+
+      .aboutme {
+        /* Holds the section title*/
+        padding-bottom: 10%;
+        padding-top: 6%;
+      }
+
+      /*
+      #whyimrunning {
+        font-size: 290%; 
+      }*/
+      #mobile_img-abtme {
+        /* Holds the image */
+        float: left;
+        width: 100%;
+        display: inline-block;
+        margin-right: 4%;
+        margin-bottom: 4%;
+        padding-bottom: 8%;
+        margin-top: 8%;
+      }
+
+
+      #img-abtme {
+        /* Holds the image */
+        display: none;
+      }
+
+      #whyme_paragraph {
+        font-family: "Montserrat";
+        font-size: 120%;
+        float: center;
+        width: 100%;
+        text-align: left;
+        display: inline-block;
+        margin-top: 3%;
+        padding-top: 8%;
+        line-height: 1.5;
+      }
+
+      /* What is the ANC */
+
+      .ANC {
+        padding-bottom: 8%;
+        padding-top: 6%;
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+
+      #whatisANC {
+        font-size: 290%;
+        padding-top: 4%;
+      }
+
+      #img-anc {
+        float: left;
+        width: 100%;
+        display: inline-block;
+        margin: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+
+      #anc_textbox {
+        font-size: 120%;
+        width: 95%;
+        margin: 0%;
+        text-align: left;
+        padding-top: 5%;
+        line-height: 1.5;
+      }
+
+      /* Get in Touch Seection */
+
+      .intouch {
+        padding-bottom: 8%;
+        padding-top: 6%;
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+
+      #getintouch {
+        font-size: 290%;
+        padding-top: 6%;
+      }
+
+      #outreach_statement {
+        text-align: left;
+        width: 100%;
+        font-size: 120%;
+        line-height: 1.5;
+        margin-bottom: 15%;
+      }
+
+      #outreach_symbols {
+        align-content: center;
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+      }
+
+      #envelope {
+        width: 15%;
+        height: auto;
+      }
+
+      #envelope:hover,
+      a#envelope:active {
+        width: 20%;
+        height: auto;
+      }
+
+      #bird {
+        width: 15%;
+        height: auto;
+      }
+
+      #bird:hover,
+      a#bird:active {
+        width: 20%;
+        height: auto;
+      }
+
+
+      /* Donate Section */
+
+      .donate {
+        padding-top: 5%;
+      }
+
+      #excited {
+        font-size: 250%;
+        padding-top: 8%;
+      }
+
+      #fundingstatement {
+        text-align: left;
+        width: 100%;
+        font-size: 125%;
+      }
+
+      #logobox {
+        width: 60%;
+        margin-left: 23%;
+        margin-top: 10%;
+      }
+
+      #click_donate {
+        text-align: center;
+        width: 40%;
+        margin-left: 30%;
+        padding: 2%;
+      }
+
+
+      /* Footer */
+
+      .rightsreserved {
+        padding-left: 60%;
+      }
+    }
